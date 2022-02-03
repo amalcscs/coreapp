@@ -1,0 +1,59 @@
+{%extends 'index.html'%}
+{%load static%}
+{%block content%}
+
+
+<div class="row pt-5" style="background-color: black;">
+    <div class=" ml-5 text-light" style="font-size: 20px;font-weight: 600;margin-left:40px;">PROJECT TASKS</div>
+</div>
+<div class="content-wrapper">
+    <div class="row">
+          <div class="card">
+            <div class="card-body">
+                <div class="table-responsive">
+                <table class="table  table-bordered ">
+                    <thead  style="background-color: black;">
+                      <tr >
+                        <th scope="col" class="text-light">Task name</th>
+                        <th scope="col" class="text-light">AssignedTo</th>
+                        <th scope="col" class="text-light">Task Status</th>
+                        <th scope="col" class="text-light">Test Status</th>
+                        <th scope="col" class="text-light">Extension</th>
+                        <th scope="col" class="text-light">Split Task</th>
+                        <th scope="col" class="text-light">Project Details</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="text-light">manager and hr module</td>
+                        <td class="text-light">Christin</td>
+                       <td class="text-primary"><a href="#" style="text-decoration: none;">Task Status</a> </td>
+                      <td class="text-primary"><a href="#" style="text-decoration: none;">Tester Status</a></td>
+                       <td class="text-primary"><a href="#" style="text-decoration: none;">Extension Status</a></td>
+                      <td class="text-primary"><a href="tlsplittask" style="text-decoration: none;">Split Status</a></td>
+                       <td>
+                        <div class="progress" data-toggle="modal" data-target="" style="border-radius:5px;height:20px;background-color:#C2F0EB">
+                            <div class="progress-bar" style="width:50%;height:20px;">50%</div>
+                       </td>
+                      </tr>
+                      <tr>
+                        <td class="text-light">Updation in admin</td>
+                        <td class="text-light">Christin</td>
+                        <td class="text-primary"><a href="#" style="text-decoration: none;">Task Status</a> </td>
+                        <td class="text-primary"><a href="#" style="text-decoration: none;">Tester Status</a></td>
+                       <td class="text-primary"><a href="#" style="text-decoration: none;">Extension Status</a></td>
+                        <td class="text-primary"><a href="tlsplittask" style="text-decoration: none;">Split Status</a></td>
+                        <td>
+                            <div class="progress" data-toggle="modal" data-target="" style="border-radius:5px;height:20px;background-color:#C2F0EB">
+                                <div class="progress-bar" style="width:40%;height:20px;">40%</div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+            </div>
+          </div>
+    
+    </div> 
+    </div>
+{% endblock %}

@@ -1,0 +1,57 @@
+{%extends 'index.html'%}
+{%load static%}
+{%block content%}
+
+
+<div class="row pt-5" style="background-color: black;">
+    <div class=" ml-5 text-light" style="font-size: 20px;font-weight: 600;margin-left:40px;">MY PROJECTS</div>
+</div>
+<div class="content-wrapper">
+    <div class="row">
+          <div class="card">
+            <div class="card-body">
+                <div class="table-responsive">
+                <table class="table  table-bordered ">
+                    <thead  style="background-color: black;">
+                      <tr >
+                        <th scope="col" class="text-light">Task name</th>
+                        <th scope="col" class="text-light">AssignedTo</th>
+                        <th scope="col" class="text-light">Task Status</th>
+                        <th scope="col" class="text-light">Test Status</th>
+                        <th scope="col" class="text-light">Extension</th>
+                        <th scope="col" class="text-light">Project Details</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="text-light">leave form</td>
+                        <td class="text-light">bibin</td>
+                       <td class="text-primary"><a href="#" style="text-decoration: none;">Task Status</a> </td>
+                      <td class="text-primary"><a href="#" style="text-decoration: none;">Tester Status</a></td>
+                       <td class="text-primary"><a href="#" style="text-decoration: none;">Extension Status</a></td>
+                       <td>
+                           <div class="progress" data-toggle="modal" data-target="" style="border-radius:5px;height:20px;background-color:#C2F0EB">
+                            <div class="progress-bar" style="width:30%;height:20px;">30%</div>
+                        </div>
+                       </td>
+                      </tr>
+                      <tr>
+                        <td class="text-light">internship registration</td>
+                        <td class="text-light">amal</td>
+                        <td class="text-primary"><a href="#" style="text-decoration: none;">Task Status</a> </td>
+                        <td class="text-primary"><a href="#" style="text-decoration: none;">Tester Status</a></td>
+                       <td class="text-primary"><a href="#" style="text-decoration: none;">Extension Status</a></td>
+                        <td>
+                            <div class="progress" data-toggle="modal" data-target="" style="border-radius:5px;height:20px;background-color:#C2F0EB">
+                                <div class="progress-bar" style="width:30%;height:20px;">30%</div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <a href="tlgivetask" style="text-decoration:none;">Add a sub task</a>
+            </div>
+          </div>     
+    </div> 
+    </div>
+{% endblock %}

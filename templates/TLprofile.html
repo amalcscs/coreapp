@@ -1,0 +1,51 @@
+{%extends 'index.html'%}
+{%load static%}
+{%block content%}
+
+
+<div class="main-panel" style="background-color:black;">
+    <div class="row">
+        <div class=" ml-5 text-light" style="font-size: 20px;font-weight: 600;margin-left:40px;">MY PROFILE</div></div>
+        <div class="container-fluid">
+        <div class="row mt-5 " style="background-color: #191c24;">
+             <div class="col-md-6">
+                    <h3 class="adname pt-4" style="margin-left:30px;">TL</h3>
+                    <h4 style="font-weight: 400;margin-left:30px;">head</h4>
+                    <h5 style="font-weight: 400;margin-left:30px;">
+                    <span style="color: #58B7AA">Joining date</span>&nbsp10 jan 2021</h5>
+                </div>
+                <div class="col-md-3"></div>
+                <div class="col-md-3">
+                   <div style="margin-left: 30px;"><img src="{% static '/assets/images/faces/face5.jpg' %}" class="p-3 rounded-circle justify-content-end ml-5" width="150" height="150" id=""></div> </div>
+                </div></div>
+    <div class="content-wrapper">
+      <div class="page-header">
+        <h3 class="page-title">  </h3>
+        <nav aria-label="breadcrumb">
+          
+        </nav>
+      </div>
+      
+      <div class="row">
+        <div class="col-lg-6 grid-margin stretch-card">
+            <div class="card">
+              <div class="card-body">
+                <h4 class="card-title">Pie chart</h4>
+                <canvas id="pieChart" style="height:200px"></canvas>
+              </div>
+            </div>
+          </div>
+        <div class="col-lg-6 grid-margin stretch-card">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">Bar chart</h4>
+              <canvas id="barChart" style="height:200px"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+    </div>
+
+{% endblock %}

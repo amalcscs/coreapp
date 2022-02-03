@@ -1,0 +1,44 @@
+{%extends 'index.html'%}
+{%load static%}
+{%block content%}
+
+
+<div class="row pt-5" style="background-color: black;">
+    <div class=" ml-5 text-light" style="font-size: 20px;font-weight: 600;margin-left:40px;">PROJECTS</div></div>
+<div class="content-wrapper">
+    <div class="row">
+      <div class="col-lg-4 mt-2">
+          <a href="tlprojecttasks" style="text-decoration: none;">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">Fynsys</h4>
+              <div>
+                <img class="img-xs w-75 h-50" src="{% static '/fynsys_bg.jpg' %}" alt="" style="margin-left:40px;"> 
+              </div>
+            </div>
+          </div>
+        </a>
+        </div>
+      <div class="col-lg-4 mt-2 ">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">Core</h4>
+            <div>
+                <img class="img-xs w-75 h-50" src="{% static '/fynsys_bg.jpg' %}" alt="" style="margin-left:40px;"> 
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4  mt-2">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">Mobile App</h4>
+            <div class="">
+                <img class="img-xs w-75 h-50 ml-5" src="{% static '/mobileapp.jpg' %}" alt="" style="margin-left:40px;"> 
+              </div>
+          </div>
+        </div>
+      </div>
+    </div> 
+    </div>
+{% endblock %}
