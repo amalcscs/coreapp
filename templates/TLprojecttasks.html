@@ -1,13 +1,13 @@
+
 {%extends 'index.html'%}
 {%load static%}
 {%block content%}
 
 
 <div class="row pt-5" style="background-color: black;">
-    <div class=" ml-5 text-light" style="font-size: 20px;font-weight: 600;margin-left:40px;">PROJECT TASKS</div>
+    <div class=" text-light" style="font-size: 20px;font-weight: 600;">PROJECT TASKS</div>
 </div>
-<div class="content-wrapper">
-    <div class="row">
+    <div class="row mt-5">
           <div class="card">
             <div class="card-body">
                 <div class="table-responsive">
@@ -27,9 +27,10 @@
                       <tr>
                         <td class="text-light">manager and hr module</td>
                         <td class="text-light">Christin</td>
-                       <td class="text-primary"><a href="#" style="text-decoration: none;">Task Status</a> </td>
+                       <td class="text-primary"><a href="" data-toggle="modal" data-target="#exampleModalCenter" style="text-decoration: none;">Task Status</a> 
+                        </td>
                       <td class="text-primary"><a href="#" style="text-decoration: none;">Tester Status</a></td>
-                       <td class="text-primary"><a href="#" style="text-decoration: none;">Extension Status</a></td>
+                       <td class="text-primary"><a href="#" data-toggle="modal" data-target="#exampleModalCenter1" style="text-decoration: none;">Extension Status</a></td>
                       <td class="text-primary"><a href="tlsplittask" style="text-decoration: none;">Split Status</a></td>
                        <td>
                         <div class="progress" data-toggle="modal" data-target="" style="border-radius:5px;height:20px;background-color:#C2F0EB">
@@ -39,7 +40,7 @@
                       <tr>
                         <td class="text-light">Updation in admin</td>
                         <td class="text-light">Christin</td>
-                        <td class="text-primary"><a href="#" style="text-decoration: none;">Task Status</a> </td>
+                        <td class="text-primary"><a href="tltaskstatus" style="text-decoration: none;">Task Status</a> </td>
                         <td class="text-primary"><a href="#" style="text-decoration: none;">Tester Status</a></td>
                        <td class="text-primary"><a href="#" style="text-decoration: none;">Extension Status</a></td>
                         <td class="text-primary"><a href="tlsplittask" style="text-decoration: none;">Split Status</a></td>
@@ -54,6 +55,86 @@
             </div>
           </div>
     
-    </div> 
     </div>
+
+<!-- pop up window for task status -->
+    <div class="row w-75 mt-5 modal" id="exampleModalCenter">
+
+      <div class="card">
+        <div class="card-body">
+            <div class="text-info" style="font-size: 20px;font-weight: 600;">Sub task</div>
+            <div class="table-responsive mt-3">
+            <table class="table  table-bordered ">
+                <thead  style="background-color: black;">
+                  <tr >
+                    <th scope="col" class="text-light">Date</th>
+                    <th scope="col" class="text-light">Work done</th>
+                    <th scope="col" class="text-light">Files</th>
+                    <th scope="col" class="text-light">Actions</th>
+                   
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="text-light">jan 21, 2022 </td>
+                    <td class="text-light">1.front end work completed 2.back end work in progress</td>
+                   <td class="text-light"><a href="#" style="text-decoration: none;">Download</a> </td>
+                  <td class="text-primary"><a href="#" style="text-decoration: none;"></a></td>
+                   
+                  </tr>
+                  <tr>
+                    <td class="text-light">jan 10, 2022</td>
+                    <td class="text-light">1.front end work completed 2.back end work in progress</td>
+                    <td class="text-primary"><a href="#" style="text-decoration: none;">Download</a> </td>
+                    <td class="text-primary"><a href="#" style="text-decoration: none;"></a></td>
+                   
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+        </div>
+      </div>
+ 
+</div>
+
+<!-- pop up window for extension status -->
+<div class="row mt-5 modal" id="exampleModalCenter1">
+  <div class="col-md-2"></div>
+  <div class="col-md-8">
+    <div class="card">
+      <div class="card-body">
+          <form action="" method="post">
+              {% csrf_token %}
+              <div class="row pt-1 text-info">Extension Request</div>
+              <div class="row pt-3">
+                <div class="col-md-4">
+                <div class="text-light mr-2 ml-3 mt-2">Requested Days</div>
+                </div>
+                <div class="col-md-8 ">
+                 <input type="text" class="drop form-control ml-3 mt-2" required>
+               </div>
+              </div>
+              <div class="row pt-1">
+                  <div class="col-md-4">
+                  <div class="text-light mr-2 ml-3 mt-2">Reason</div>
+                  </div>
+                  <div class="col-md-8 ">
+                    <textarea class="form-control  ml-3 mt-2" rows="4" cols="50"></textarea>
+                 </div>
+                </div>
+                <div class="row pt-1">
+                  <div class="col-md-4">
+                  <div class="text-light mr-2 ml-3 mt-2">Previous Status</div>
+                  </div>
+                  <div class="col-md-8 ">
+                   
+                 </div>
+                </div>
+                <div class="" style="float:right;">
+                <button type="submit" class="btn btn-primary " >Submit</button>
+              </div>
+    </div> 
+    <div class="col-md-2"></div>   
+</div> 
+
 {% endblock %}

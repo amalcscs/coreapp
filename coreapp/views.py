@@ -5,8 +5,8 @@ from django.shortcuts import render,redirect
 def index(request):
     return render(request, 'index.html')
 
-def tlprofile(request):
-    return render(request, 'TLprofile.html')
+def tldashboard(request):
+    return render(request, 'TLdashboard.html')
 
 def tlprojects(request):
     return render(request, 'TLprojects.html')
@@ -19,3 +19,6 @@ def tlsplittask(request):
 
 def tlgivetask(request):
     return render(request, 'TLgivetask.html')
+
+def tltaskstatus(request):
+    return render(request, 'TLtaskstatus.html')

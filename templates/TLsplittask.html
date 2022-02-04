@@ -1,13 +1,14 @@
+
+
 {%extends 'index.html'%}
 {%load static%}
 {%block content%}
 
 
 <div class="row pt-5" style="background-color: black;">
-    <div class=" ml-5 text-light" style="font-size: 20px;font-weight: 600;margin-left:40px;">MY PROJECTS</div>
+    <div class=" text-light" style="font-size: 20px;font-weight: 600;">MY PROJECTS</div>
 </div>
-<div class="content-wrapper">
-    <div class="row">
+    <div class="row mt-5">
           <div class="card">
             <div class="card-body">
                 <div class="table-responsive">
@@ -26,7 +27,7 @@
                       <tr>
                         <td class="text-light">leave form</td>
                         <td class="text-light">bibin</td>
-                       <td class="text-primary"><a href="#" style="text-decoration: none;">Task Status</a> </td>
+                       <td class="text-primary"><a href="" data-toggle="modal" data-target="#exampleModalCenter2" style="text-decoration: none;">Task Status</a> </td>
                       <td class="text-primary"><a href="#" style="text-decoration: none;">Tester Status</a></td>
                        <td class="text-primary"><a href="#" style="text-decoration: none;">Extension Status</a></td>
                        <td>
@@ -38,7 +39,7 @@
                       <tr>
                         <td class="text-light">internship registration</td>
                         <td class="text-light">amal</td>
-                        <td class="text-primary"><a href="#" style="text-decoration: none;">Task Status</a> </td>
+                        <td class="text-primary"><a href="tltaskstatus" style="text-decoration: none;">Task Status</a> </td>
                         <td class="text-primary"><a href="#" style="text-decoration: none;">Tester Status</a></td>
                        <td class="text-primary"><a href="#" style="text-decoration: none;">Extension Status</a></td>
                         <td>
@@ -49,9 +50,70 @@
                     </tbody>
                   </table>
                 </div>
-                <a href="tlgivetask" style="text-decoration:none;">Add a sub task</a>
+                <i class="material-icons mt-2">assignment</i> <a href="tlgivetask" style="text-decoration:none;">Add a sub task</a>
             </div>
           </div>     
     </div> 
+
+
+<!-- pop up window for task status -->
+
+<div class="rowmt-5 modal" id="exampleModalCenter2">
+
+  <div class="card ">
+    <div class="card-body">
+        <div class="text-info" style="font-size: 20px;font-weight: 600;">Daily work report</div>
+        <div class="table-responsive mt-3">
+        <table class="table  table-bordered ">
+            <thead  style="background-color: black;">
+              <tr >
+                <th scope="col" class="text-light">Date</th>
+                <th scope="col" class="text-light">ReportBy</th>
+                <th scope="col" class="text-light">Task</th>
+                <th scope="col" class="text-light">Sub Task</th>
+                <th scope="col" class="text-light">Work Done</th>
+                <th scope="col" class="text-light">Files</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="text-light">jan 21, 2022 </td>
+                <td class="text-light">nijil</td>
+               <td class="text-light">update base page
+                 Deadline jan 31, 2022
+               </td>
+              <td class="text-light">Registration
+                Deadline jan 31, 2022
+              </td>
+              <td class="text-light">1.work started</td>
+              <td class="text-info"><a href="" style="text-decoration:none;">Download</a></td>
+              </tr>
+              <tr>
+                <td class="text-light">jan 10, 2022</td>
+                <td class="text-light">nijil</td>
+                <td class="text-light">update base page
+                  Deadline jan 31, 2022 </td>
+                <td class="text-light">Registration
+                  Deadline jan 31, 2022</td>
+                  <td class="text-light">1.design completed</td>
+                  <td class="text-info"><a href="" style="text-decoration:none;">Download</a></td>
+              </tr>
+              <tr>
+                <td class="text-light">jan 14, 2022</td>
+                <td class="text-light">nijil</td>
+                <td class="text-light">update base page
+                  Deadline jan 31, 2022</td>
+                <td class="text-light">Registration
+                  Deadline jan 31, 2022</td>
+                  <td class="text-light">1.work almost completed</td>
+                  <td class="text-info"><a href="" style="text-decoration:none;">Download</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
     </div>
+  </div>
+
+</div>
+
 {% endblock %}
