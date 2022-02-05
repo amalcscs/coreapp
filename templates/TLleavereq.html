@@ -1,0 +1,78 @@
+{% extends 'TLindex.html' %}
+{% load static %}
+{% block content %}
+<style>
+  *{
+    color:#6C7293;
+  }
+  .Search {
+    margin-top: 4%;
+    float: left;
+    margin-right: 5%;
+    padding-left: 3%;
+    padding-right: 3%;
+    line-height: 2;
+    border: 1px solid #6c7293;;
+    color:#6c7293;
+    background: #191c24;
+    width:95px;
+}
+</style>
+<h2>Leave Request</h2>
+
+<div class="col-12 grid-margin mt-5">
+    <div class="card">
+      <div class="card-body">
+        <form class="form-sample" action="TLsuccess">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group row">
+                <label class="col-sm-3 col-form-label">LEAVE FROM</label>
+                <div class="col-sm-6">
+                  <input type="date" class="form-control" style="  color:#6C7293;"/>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group row">
+                <label class="col-sm-3 col-form-label">LEAVE TO</label>
+                <div class="col-sm-6">
+                  <input type="date" class="form-control" style="  color:#6C7293;"/>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group row">
+                <label class="col-sm-3 col-form-label">REASON</label>
+                <div class="col-sm-6">
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group row">
+                <label class="col-sm-3 col-form-label"></label>
+                <div class="col-sm-6">
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="form-group row">
+                <textarea class="mx-2 form-control" style="height: 150px; max-width: 86%; color: white;"></textarea>
+              </div>
+            </div>
+            <div class="col-md-11">
+              <div class="form-group row justify-content-end">
+                  <div class="col-md-2">
+                    <button type="submit" class="btn Search ">Submit</button>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+{% endblock %}

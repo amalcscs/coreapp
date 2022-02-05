@@ -1,0 +1,135 @@
+
+{% extends 'TLindex.html' %}
+{% load static %}
+
+{% block content %}
+<style>
+    #head {
+        color: #6c7293;
+        font-size: 20px;
+        font-weight: 600;
+        margin-left: 0%;
+        margin-top: auto;
+        padding: 0.2% 1% 1.5% 1%;
+        width: 79%;
+    }
+    .card {
+        border-radius: 0.25rem;
+        margin-top: 2%;
+        height: 24vh;
+        width: 75%;
+        margin-top: 4%;
+        margin-left: 12%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        min-width: 0;
+        word-wrap: break-word;
+        background-color: #191c24;
+        background-clip: border-box;
+        border: 1px solid rgba(0, 0, 0, 0.125);
+        border-radius: 0.25rem;
+    }
+    .card .card-title {
+        color: #6c7293;
+        margin-bottom: 1.125rem;
+        text-transform: capitalize;
+        width: 100%;
+        font-weight:600;
+    }
+    .img{
+        width: 16%;
+        height: 10vh;
+        float: right;
+        margin-right: 8%;
+        margin-top: -10%;
+    }
+    center{
+        margin-top: 6%;
+        margin-left: -25%;
+        font-size: 1.25rem;
+    }
+    @media (max-width:61.938em){
+        center{
+            margin-top: 7%;
+            margin-left: -25%;
+            font-size: 1.25rem;
+        }
+        .card {
+            margin-top: 2%;
+            height: 24vh;
+            width: 80%;
+            margin-top: 4%;
+            margin-left: 10%;
+            
+        }
+        .img{
+            width: 18%;
+            height: 12vh;
+            float: right;
+            margin-right: 4%;
+            margin-top: -10%;
+        }
+    }
+    @media (max-width:596px){
+        .img {
+            width: 35%;
+            height: 9vh;
+            float: right;
+            margin-right: 30%;
+            margin-top: -2%;
+        }
+        center{
+            margin-top: 5%;
+            margin-left: -25%;
+            font-size: 1.1rem;
+        }
+        .card{
+            margin-top:7%;
+        }
+    @media (max-width:475px){
+        .img {
+            width: 40%;
+            height: 9vh;
+            float: right;
+            margin-right: 32%;
+            margin-top: -2%;
+        }
+        center {
+            margin-top: -4%;
+            margin-left: -7%;
+            font-size: 1rem;
+        }
+        .card{
+            margin-top:7%;
+        }
+        .card .card-title {
+            font-weight:100;
+        }
+    }
+
+  *{
+    color:#6C7293;
+  }
+</style>
+
+
+<body>
+    <div><label id="head">REPORT ISSUE</label></div>
+
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+              <label class="card-title" ><center>Issue reported successfully</center></label>
+              <div class="">
+                  <img src="{% static 'img/R(1).png' %}" class="img img-responsive">
+              </div>
+              
+            </div>
+          </div>
+    </div>
+</body>
+
+{% endblock content %}
+
+

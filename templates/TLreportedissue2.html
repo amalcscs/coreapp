@@ -1,0 +1,77 @@
+
+{% extends 'TLindex.html' %}
+{% load static %}
+
+
+<{% block content %}
+<style>
+    #head {
+        color: #6c7293;
+        font-size: 20px;
+        font-weight: 600;
+        margin-left: 0%;
+        margin-top: auto;
+        padding: 0.2% 1% 1.5% 1%;
+        width: 79%;
+    }
+    .card-title1{
+        color: #6c7293;
+        margin-bottom: 1.125rem;
+        text-transform: capitalize;
+        margin-top: -4%;
+        margin-left: 4%;
+    }
+    .card-title2{
+        color: #6c7293;
+        margin-bottom: 1.125rem;
+        float: right;
+        margin-top: -1%;
+        margin-right: 1%;
+    }
+    #exampleTextarea1{
+      height: 15vh;
+    }
+
+  *{
+    color:#6C7293;
+  }
+</style>
+
+
+<body>
+    <div><label id="head">REPORTED ISSUES</label></div>
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+              <img src="{% static 'img/circle.png'%}" width="20" height="20" style="margin-top:-3%;">
+              <h4 class="card-title1">Issue Reported By Abin KS</h4>
+              <form class="forms-sample">
+                <div class="form-group">
+                    <textarea class="form-control" id="exampleTextarea1" rows="4"></textarea>
+                </div>
+                
+              </form>
+            </div>
+          </div>
+
+          <br>
+
+          <div class="card">
+            <div class="card-body">
+              <img src="{% static 'img/circle.png'%}" width="20" height="20" style="margin-top: -1%;float: right;">
+          
+              <h4 class="card-title2">Action Taken</h4>
+              <form class="forms-sample">
+                <div class="form-group">
+                    <textarea class="form-control" id="exampleTextarea1" rows="4"></textarea>
+                </div>
+                
+              </form>
+            </div>
+          </div>
+    </div>
+</body>
+
+
+
+{% endblock %}

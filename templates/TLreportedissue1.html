@@ -1,0 +1,70 @@
+
+{% extends 'TLindex.html' %}
+{% load static %}
+
+
+{% block content %}
+<style>
+    #head {
+        color: #6c7293;
+        font-size: 20px;
+        font-weight: 600;
+        margin-left: 0%;
+        margin-top: auto;
+        padding: 0.2% 1% 1.5% 1%;
+        width: 79%;
+    }
+    .card{
+        margin-top:1%;
+    }
+    #qwe{
+        font-size:19px;
+        font-weight:500;
+    }
+    .card .card-body {
+        flex: 1 1 auto;
+        padding: 0.5rem 0.2rem;
+    }
+
+
+  *{
+    color:#6C7293;
+  }
+</style>
+
+
+ <body>
+    <div><label id="head">REPORTED ISSUES</label></div>
+     <div class="container">
+        <div class="card">
+            <div class="card-body">
+                <div class="row">
+                    <a href="TLreportedissue2" style="text-decoration:none;color: #6c7293;">
+                
+                  <div class="row mt-3 " >
+                    
+                   <div class="col-md-12">
+                     <div class="row p-3" style="border:1px ; margin-top:-3%; ">
+                      <div class="col-md-1">
+                        <img src="/static/img/circle.png" width="20" height="20"></div>
+                        <div class="col-md-3 " id="qwe">reported issue</div>
+                        <div class="col-md-2 " id="qwe">Alen</div>
+                        <div class="col-md-1 " id="qwe">TL</div>
+                        <div class="col-md-3 " id="qwe">Feb. 4, 2022</div>
+                        <div class="col-md-2 " id="qwe">submit</div>
+                      </div>
+                     </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+           
+      </div>
+   
+  </a 
+ 
+</body>
+
+{% endblock  %}
+
