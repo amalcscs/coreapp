@@ -19,6 +19,3 @@ def tlsplittask(request):
 
 def tlgivetask(request):
     return render(request, 'TLgivetask.html')
-
-def tltaskstatus(request):
-    return render(request, 'TLtaskstatus.html')
