@@ -19,6 +19,19 @@ def tlsplittask(request):
 
 def tlgivetask(request):
     return render(request, 'TLgivetask.html')
+
+def manindex(request):
+    return render(request, 'manager_index.html')
+
+def manEmp(request):
+    return render(request, 'man_emp.html')
+
+def manDev(request):
+    return render(request, 'man_dev.html')
+
+def manDevDashboard(request):
+    return render(request, 'man_dev_Dashboard.html')
+
 # abin
 def TLattendance(request):
     return render(request, 'TLattendance.html')

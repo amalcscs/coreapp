@@ -9,6 +9,11 @@ urlpatterns=[
     re_path(r'^tlprojecttasks$', views.tlprojecttasks, name='tlprojecttasks'),
     re_path(r'^tlsplittask$', views.tlsplittask, name='tlsplittask'),
     re_path(r'^tlgivetask$', views.tlgivetask, name='tlgivetask'),
+
+    re_path(r'^manindex$', views.manindex, name='manindex'),
+    re_path(r'^manEmp$', views.manEmp, name='manEmp'),
+    re_path(r'^manDev$', views.manDev, name='manDev'),
+     re_path(r'^manDevDashboard$', views.manDevDashboard, name='manDevDashboard'),
 # abin
     re_path(r'^TLattendance$', views.TLattendance, name='TLattendance'),
     re_path(r'^TLreportissues$', views.TLreportissues, name='TLreportissues'),
